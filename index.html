@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Piano</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="feather-icons-web/feather.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <di class="container">
+        <h1 class="title animate__animated animate__slideInDown">Piano <span class="small">Lite</span></h1>
+        <!-- <img class="banner" src="sound/music.svg" alt="" /> -->
+        <div class="show animate__animated animate__slideInLeft">
+            <input readonly class="note" type="text" />
+            <button class="save" onclick="saveNote();">Save<i class="feather-save"
+                    style="margin-left: 7px;"></i></i></button>
+            <button class="save" style="margin-left: 5px; background-color: #ffb74b; padding-left: 10px;"
+                onclick="back();"><i class="feather-delete"></i></button>
+            <button class="save" style="background-color: #ff6c6c; margin-left: 5px;" onclick="remove()"><i
+                    class="feather-trash"></i></button>
+        </div>
+        <div class="color animate__animated animate__slideInRight">
+            <div class="key-color-outer"><span class="color-range-1 color-inner"></span></div>
+            <div class="key-color-outer"><span class="color-range-2 color-inner"></span></div>
+            <div class="key-color-outer"><span class="color-range-3 color-inner"></span></div>
+            <div class="key-color-outer"><span class="color-range-4 color-inner"></span></div>
+            <div class="key-color-outer"><span class="color-range-5 color-inner"></span></div>
+            <div class="key-color-outer"><span class="color-range-6 color-inner"></span></div>
+            <div class="key-color-outer"><span class="color-range-7 color-inner"></span></div>
+            <div class="key-color-outer"><span class="color-range-8 color-inner"></span></div>
+        </div>
+        <div class="btn-group animate__animated animate__slideInUp">
+            <button class="key" onclick="play('C4');">
+                C4 <span class="black"></span>
+            </button>
+            <button class="key" onclick="play('D4');">
+                D4<span class="black"></span>
+            </button>
+            <button class="key" onclick="play('E4');">E4</button>
+            <button class="key" onclick="play('F4');">
+                F4<span class="black"></span>
+            </button>
+            <button class="key" onclick="play('G4');">
+                G4<span class="black"></span>
+            </button>
+            <button class="key" onclick="play('A4');">
+                A4<span class="black"></span>
+            </button>
+            <button class="key" onclick="play('B4');">B4</button>
+            <button class="key" onclick="play('C5');">
+                C5<span class="black"></span>
+            </button>
+        </div>
+        <ul class="list animate__animated"></ul>
+        </div>
+</body>
+
+<script src="app.js"></script>
+
+</html>
